@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 400;
+  color: #292929;
+  scroll-behavior: smooth;
+}
+
+p,
+img {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-size: 58px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.title img {
+  max-height: 64px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 16px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+a,
+a:hover {
+  color: #087e8b;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  padding: 4px 0;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 32px;
+  padding: 80px 32px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  gap: 16px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  gap: 32px;
+}
+
+.links,
+.students {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.student {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.student img {
+  border-radius: 40px;
+}
+
+#fran,
+#filip {
+  display: none;
+  font-size: 14px;
+}
+
+.footer {
+  position: relative;
+  margin: auto;
+  max-width: 1080px;
+  padding: 16px 32px;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 16px;
+  }
+  .footer {
+    padding: 16px;
+  }
+}
